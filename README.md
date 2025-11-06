@@ -4,6 +4,17 @@ Translate strings between British (en_GB) and American (en_US) English.
 
 This is a simple lookup-based library for speed. It aims to cover most common cases, with some exceptions. You can always add your own
 
+```bash
+# Node
+npx jsr add @phughesmcr/en-uk-usa
+
+# Deno
+deno add jsr:@phughesmcr/en-uk-usa
+
+# Bun
+bunx jsr add @phughesmcr/en-uk-usa
+```
+
 ```javascript
 import { Dictionary } from "@phughesmcr/en-uk-usa";
 
