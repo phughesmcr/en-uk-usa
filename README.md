@@ -2,7 +2,7 @@
 
 Translate strings between British (en_GB) and American (en_US) English.
 
-This is a simple lookup-based library for speed. It aims to cover most common cases, with some exceptions. You can always add your own
+This is a simple lookup-based library for speed. It aims to cover most common cases, with some exceptions. You can always add your own. This library is not context-aware and will require human checks.
 
 ```bash
 # Node
@@ -24,7 +24,7 @@ const dictionary = new Dictionary();
 // translate en_GB to en_US (splitting a string by word)
 const gbString = "I'm visualising the colour of this yoghurt";
 const gbResult = gbString.split(/\w+/).map((word) => dictionary.gbToUs(word)).join(" ");
-// gbResult = "I'm visualising the colour of this yoghurt"
+// gbResult = "I'm visualizing the color of this yogurt"
 
 // translate en_US to en_GB
 const usString = "This eon is among the most checkered. Oxidation has taken the plow.";
